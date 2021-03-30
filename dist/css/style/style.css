@@ -7,6 +7,7 @@
 :root {
     /*text-color*/
     --text-point-color:#6839d3;
+    --blurple:#6839d3;
     --text-01: #37354e;
     --text-02 : #737183;
     --text-03 : #9b9aa6;
@@ -13676,7 +13677,8 @@ header.fixed .sticky-wrapper.is-sticky .gnb {
 
 footer .container {
         width: 100%;
-        background: #f8f8f8
+        background: #fff;
+        border-top: 1px solid #e2e3e6
     }
 
 footer .container .info-wrap {
@@ -13701,7 +13703,8 @@ footer .container .info-wrap .service li a {
                         font-weight: bold;
                         font-size: 13px;
                         line-height: 19px;
-                        color: #aaaaaa;
+                        color: #9b9aa6;
+                        color: var(--text-03);
                     }
 
 footer .container .info-wrap .service li:after {
@@ -13962,3 +13965,344 @@ footer.main {
                     color: var(--text-04);
                     margin-bottom: 20px;
                 }
+
+/**
+	renewal
+ */
+
+/*
+   s 리뉴얼 v.0.1 -- 2021.03.30
+*/
+
+.wrap {
+    padding-top: 60px;
+}
+
+.content-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+.btn-normal {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 1px #37354e;
+    border: solid 1px var(--text-01);
+    text-align: center;
+    font-family: 'Noto Sans CJK KR Medium';
+    font-family: var(--font2);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.38px;
+    color: #37354e;
+    color: var(--text-01)
+}
+
+.btn-normal:hover, .btn-normal:focus {
+        color: #37354e;
+        color: var(--text-01);
+    }
+
+/* tablet */
+
+@media (min-width: 767px) {
+    .wrap {
+        padding-top: 90px;
+    }
+}
+
+/* header */
+
+.menu-wrap {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #fff
+}
+
+.menu-wrap h1 {
+        position: absolute;
+        width: 52px;
+        height: 22px;
+        margin: 0;
+        top: 19px;
+        left: 16px
+    }
+
+.menu-wrap h1 .logo {
+            display: block;
+            width: 52px;
+            height: 22px;
+            background-image: url(../../img/renewal_v.0.1/logo.svg);
+            background-size: cover;
+        }
+
+.menu-wrap .menu-mobile {
+        position: absolute;
+        display: none;
+        width: 100%;
+        padding: 20px 0 25px;
+        background-color: #fff;
+        top: 60px;
+        left: 0
+    }
+
+.menu-wrap .menu-mobile ul li {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px
+            }
+
+.menu-wrap .menu-mobile ul li a {
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 25px;
+                    letter-spacing: -0.85px;
+                    color: #37354e;
+                    color: var(--text-01)
+                }
+
+.menu-wrap .menu-mobile ul li a:active {
+                        color: #6839d3;
+                        color: var(--blurple);
+                    }
+
+.menu-wrap .menu-mobile ul li.active a {
+                        color: #6839d3;
+                        color: var(--blurple);
+                    }
+
+.menu-wrap .menu-mobile ul li:last-child {
+                    margin-bottom: 0;
+                }
+
+.menu-wrap .menu-mobile.open {
+            display: block;
+        }
+
+.menu-wrap .btn-menu {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        top: 17px;
+        right: 16px;
+        background-image: url(../../img/renewal_v.0.1/btn-menu.svg);
+        background-size: cover;
+        transition: .2s
+    }
+
+.menu-wrap .btn-menu.close {
+            float: none;
+            opacity: 1 !important;
+            text-shadow: none;
+            transition: .2s;
+            background-image: url(../../img/renewal_v.0.1/btn-menu-close.svg);
+        }
+
+.menu-wrap .menu-pc {
+        display: none;
+    }
+
+/* tablet */
+
+@media (min-width: 767px) {
+    .menu-wrap {
+        width: 100%;
+        height: 90px;
+        border-bottom: 1px solid #f0f0f0
+    }
+
+        .menu-wrap h1 {
+            width: 77px;
+            height: 32px;
+            top: 29px;
+            left: 20px
+        }
+
+            .menu-wrap h1 .logo {
+                width: 77px;
+                height: 32px;
+            }
+
+        .menu-wrap .menu-mobile {
+            display: none;
+        }
+
+        .menu-wrap .btn-menu {
+            display: none;
+        }
+
+        .menu-wrap .menu-pc {
+            display: block;
+            width: 100%;
+            height: 90px
+        }
+
+            .menu-wrap .menu-pc ul {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 30px
+            }
+
+                .menu-wrap .menu-pc ul li {
+                    position: relative;
+                    display: flex;
+                    width: -webkit-fit-content;
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    height: 90px;
+                    margin-right: 70px;
+                    align-items: center
+                }
+
+                    .menu-wrap .menu-pc ul li:last-child {
+                        margin-right: 0;
+                    }
+
+                    .menu-wrap .menu-pc ul li a {
+                        display: inline-block;
+                        font-family: 'Noto Sans CJK KR Medium';
+                        font-family: var(--font2);
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 29px;
+                        letter-spacing: -0.5px;
+                        color: #37354e;
+                        color: var(--text-01)
+                    }
+
+                        .menu-wrap .menu-pc ul li a:hover {
+                            color: #6839d3;
+                            color: var(--blurple);
+                        }
+                        .menu-wrap .menu-pc ul li.active a {
+                            color: #6839d3;
+                            color: var(--blurple);
+                        }
+                        .menu-wrap .menu-pc ul li.active::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 3px;
+                            background-color: #6839d3;
+                            background-color: var(--text-point-color);
+                        }
+}
+
+/* pc */
+
+@media (min-width: 1060px) {
+        .menu-wrap .inner {
+            position: relative;
+            width: 1024px;
+            margin: 0 auto;
+        }
+}
+
+/* contents -  생활금융정보 */
+
+.life-info-wrap {
+    padding-bottom: 50px
+}
+
+.life-info-wrap .img-list {
+        margin-bottom: 7px
+    }
+
+.life-info-wrap .img-list .item {
+            margin-bottom: 19px
+        }
+
+.life-info-wrap .img-list .item a {
+                display: block
+            }
+
+.life-info-wrap .img-list .item a .img {
+                    width: 100%;
+                    height: 190px
+                }
+
+.life-info-wrap .img-list .item a .img img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+.life-info-wrap .img-list .item a .text {
+                    display: block;
+                    padding: 15px 20px;
+                    font-family: 'Noto Sans CJK KR Medium';
+                    font-family: var(--font2);
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 25.5px;
+                    letter-spacing: -0.43px;
+                    text-align: left;
+                    color: #37354e;
+                    color: var(--text-01);
+                }
+
+.life-info-wrap .btn-wrap {
+        padding: 0 20px;
+    }
+
+/* tablet */
+
+@media (min-width: 767px) {
+}
+
+/* pc */
+
+@media (min-width: 1060px) {
+}
+
+/*
+   e 리뉴얼 v.0.1 -- 2021.03.30
+*/
+
+/* header */
+
+/* tablet */
+
+@media (min-width: 767px) {
+}
+
+/* pc */
+
+@media (min-width: 1060px) {
+}
+
+/* header */
+
+/* tablet */
+
+@media (min-width: 767px) {
+}
+
+/* pc */
+
+@media (min-width: 1060px) {
+}
+
+/* header */
+
+/* tablet */
+
+@media (min-width: 767px) {
+}
+
+/* pc */
+
+@media (min-width: 1060px) {
+}
