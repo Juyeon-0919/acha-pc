@@ -100,55 +100,61 @@ data.terms = {
     ]
 };
 data.renewal = {
-    'title': "메인",
+    'title': "리뉴얼_v.0.1",
     'list': [
         {
             "stateClass": "complete",
-            "url": "ui_ma_01",
+            "url": "1. 생활금융정보(목록)",
             "part": "pages",
-            "page": "메인화면"
+            "page": "1. 생활금융정보(목록)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_error",
+            "url": "2. 생활금융정보(상세)",
             "part": "pages",
-            "page": "화면 오류 페이지"
+            "page": "2. 생활금융정보(상세)"
         },
         {
             "stateClass": "complete",
-            "url": "화면오류(공동인증서)",
+            "url": "3. 공지사항(목록)",
             "part": "pages",
-            "page": "화면오류(공동인증서)"
+            "page": "3. 공지사항(목록)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_m_copy",
+            "url": "4. 공지사항(상세)",
             "part": "pages",
-            "page": "모바일_공인인증서복사"
+            "page": "4. 공지사항(상세)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_intro_mac_00",
+            "url": "5. 이벤트(목록)",
             "part": "pages",
-            "page": "PC_02_공인인증서복사_01_mac인경우"
+            "page": "5. 이벤트(목록)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_intro_01",
+            "url": "6. 이벤트(상세)",
             "part": "pages",
-            "page": "PC_02_공인인증서복사_01_복사하기"
+            "page": "6. 이벤트(상세)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_intro_03",
+            "url": "7. 이벤트 당첨자 확인(목록)",
             "part": "pages",
-            "page": "PC_02_공인인증서복사_02_내보내기"
+            "page": "7. 이벤트 당첨자 확인(목록)"
         },
         {
             "stateClass": "complete",
-            "url": "ui_intro_04",
+            "url": "8. 이벤트 당첨자 확인(상세)",
             "part": "pages",
-            "page": "PC_02_공인인증서복사_03_완료"
+            "page": "8. 이벤트 당첨자 확인(상세)"
+        },
+        {
+            "stateClass": "complete",
+            "url": "9. 민원센터 클릭시",
+            "part": "pages",
+            "page": "9. 민원센터 클릭시"
         },
     ]
 };

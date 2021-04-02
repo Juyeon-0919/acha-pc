@@ -83,6 +83,7 @@
 		var source = $('#list-template').html(); //jQuery
 		var template = Handlebars.compile(source); //컴파일
 		$('.wrap_scroll')
+			.append(template(data.renewal))
 			.append(template(data.page))
 			.append(template(data.terms))
 	</script>
