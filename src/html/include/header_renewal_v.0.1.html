@@ -23,16 +23,18 @@
         </div>
     </div>
     <script>
-        $('#headerSticky').sticky({topSpacing: 0});
+        $('#headerSticky').sticky({topSpacing: 0})
 
         $('._btnMenu').on('click', function (){
             if($('._btnMenu').hasClass('close')){
                 $(this).removeClass('close')
                 $('._menu').removeClass('open')
+                $('._menuMobile').hide()
             }
             else {
                 $(this).addClass('close')
                 $('._menu').addClass('open')
+                $('._menuMobile').show()
             }
         })
 
