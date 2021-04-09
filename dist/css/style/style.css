@@ -14318,7 +14318,7 @@ footer.main {
             }
 
         .menu-wrap .menu-mobile {
-            display: none;
+            display: none !important;
         }
 
         .menu-wrap .btn-menu {

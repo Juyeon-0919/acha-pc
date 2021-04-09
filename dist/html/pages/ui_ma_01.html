@@ -18,30 +18,52 @@
 
 <body>
 <div id="wrap">
-    <!-- s header-->
+    <!-- s header / renewal -- 2021.03.30 -->
 <header>
-    <div class="gnb" id="sticker">
-        <h1><a href="#" class="logo"><span class="sr-only">아차</span></a></h1>
-        <ul>
-            <li><a href="#"><img src="../../img/common/logo.png" alt="아차"></a></li>
-            <li>
-                <a href="#">
-                    공인인증서 복사
-                    <i class="sprite gnb_arrow_white"></i>
-                    <i class="i-copy-w"><img src="../../img/common/gnb_arrow_white_320@2x.png" alt=""></i>
-                    <i class="i-copy-b"><img src="../../img/common/gnb_arrow_black_320@2x.png" alt=""></i>
-                    <i class="sprite gnb_arrow_black"></i>
-                </a>
-            </li>
-        </ul>
+    <div class="menu-wrap" id="headerSticky">
+        <div class="inner">
+            <h1><a href="#" class="logo"><span class="sr-only">아차</span></a></h1>
+            <div class="menu-mobile _menuMobile">
+                <ul>
+                    <li><a href="#">공동인증서 복사</a></li>
+                    <li class="active"><a href="#">생활금융정보</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+            <div class="menu-pc _menuPC">
+                <ul>
+                    <li><a href="#">공동인증서 복사</a></li>
+                    <li class="active"><a href="#">생활금융정보</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+            <a class="btn-menu _btnMenu" href="#"></a>
+        </div>
     </div>
     <script>
-        $(document).ready(function () {
-            $("#sticker").sticky({topSpacing: 0});
-        });
+        $('#headerSticky').sticky({topSpacing: 0})
+
+        $('._btnMenu').on('click', function (){
+            if($('._btnMenu').hasClass('close')){
+                $(this).removeClass('close')
+                $('._menu').removeClass('open')
+                $('._menuMobile').hide()
+            }
+            else {
+                $(this).addClass('close')
+                $('._menu').addClass('open')
+                $('._menuMobile').show()
+            }
+        })
+
+        $('._menuPC li a').on('click',function (){
+            $(this).parent().addClass('active').siblings().removeClass('active')
+        })
     </script>
 </header>
-<!-- e header-->
+<!-- e header / renewal -- 2021.03.30 -->
 
     <article class="container">
         <h2 class="visually_hidden">아차 컨텐츠</h2>
