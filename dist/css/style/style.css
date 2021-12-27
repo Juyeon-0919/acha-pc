@@ -13967,6 +13967,88 @@ footer.main {
                     margin-bottom: 20px;
                 }
 
+.modal-renewal .modal-dialog {
+        max-width: 600px;
+    }
+
+.modal-renewal .modal-content {
+        padding: 24px 24px 53px;
+        border-radius: 10px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: 0;
+    }
+
+.modal-renewal .modal-header {
+        justify-content: flex-end;
+        border: 0;
+        padding: 0;
+        margin-bottom: 19px
+    }
+
+.modal-renewal .modal-header .btn-close {
+            background-color: #fff
+        }
+
+.modal-renewal .modal-header .btn-close:focus {
+                outline: none;
+            }
+
+.modal-renewal .modal-header .btn-close .btn-popup-close {
+                display: block;
+                width: 22px;
+                height: 22px;
+                background-image: url(../../img/common/btn-popup-close@2x.png);
+                background-size: cover;
+            }
+
+.modal-renewal .modal-body {
+        text-align: center;
+        padding: 0
+    }
+
+.modal-renewal .modal-body h2 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 38px;
+            letter-spacing: -0.65px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+.modal-renewal .modal-body .img {
+            width: 166px;
+            height: 130px;
+            margin: 0 auto 27px
+        }
+
+.modal-renewal .modal-body .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+.modal-renewal .modal-body .desc-lg {
+            font-family: 'Noto Sans CJK KR Medium';
+            font-family: var(--font2);
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: -0.48px;
+            text-align: center;
+            color: #6839d3;
+            color: var(--blurple);
+            margin-bottom: 10px;
+        }
+
+.modal-renewal .modal-body .desc {
+            font-family: 'Noto Sans CJK KR DemiLight';
+            font-family: var(--font5);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: -0.48px;
+            margin-bottom: 12px;
+        }
+
 /**
 	renewal
  */

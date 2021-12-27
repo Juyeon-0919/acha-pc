@@ -4,6 +4,12 @@ data.page = {
     'list': [
         {
             "stateClass": "complete",
+            "url": "아차APP_리뉴얼_안내",
+            "part": "pages",
+            "page": "아차APP_리뉴얼_안내"
+        },
+        {
+            "stateClass": "complete",
             "url": "ui_ma_01",
             "part": "pages",
             "page": "메인화면"
